@@ -5,6 +5,10 @@ function cube() {
  var num = document.getElementById("n1");
  num.value = Math.pow(num.value, 3);
 }
+function sin(){
+ var num = document.getElementById("n2");
+ num.value = Math.sin(num.value*Math.PI/180);
+}
 </script>
 </head>
 <body>
@@ -12,5 +16,14 @@ function cube() {
  <input type="text" id="n1">
   <button onclick="cube()"> x^3 </button>
 </body>
+
+</script>
+</head>
+<body>
+ Number:
+ <input type="text" id="n2">
+  <button onclick="sin()"> sin(x) </button>
+</body>
+
 <h1>Calculadora de Enrique Calatayud Candelas<h1>
 </html>
